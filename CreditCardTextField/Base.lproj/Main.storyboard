@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CreditCardTextField" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9q8-YD-1Cg"/>
+                        <viewControllerLayoutGuide type="bottom" id="aYx-A8-E8z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Sc8-Y1-yaw">
+                                <rect key="frame" x="31" y="93" width="312" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name Card" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Irh-Yr-DOc">
+                                <rect key="frame" x="31" y="184" width="312" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expiration date" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3dr-CG-6kV">
+                                <rect key="frame" x="101" y="261" width="172" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CCV" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nTE-dL-NLx">
+                                <rect key="frame" x="130" y="360" width="114" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="nTE-dL-NLx" secondAttribute="trailing" constant="131" id="0Qn-aT-ngb"/>
+                            <constraint firstItem="nTE-dL-NLx" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="130" id="4pG-vN-dWD"/>
+                            <constraint firstItem="3dr-CG-6kV" firstAttribute="top" secondItem="Irh-Yr-DOc" secondAttribute="bottom" constant="47" id="9DE-hb-uP6"/>
+                            <constraint firstAttribute="trailing" secondItem="Sc8-Y1-yaw" secondAttribute="trailing" constant="32" id="Ab9-Vn-spT"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Irh-Yr-DOc" secondAttribute="trailing" constant="16" id="DSA-nh-nSP"/>
+                            <constraint firstItem="nTE-dL-NLx" firstAttribute="top" secondItem="3dr-CG-6kV" secondAttribute="bottom" constant="69" id="EeK-2V-mpW"/>
+                            <constraint firstItem="aYx-A8-E8z" firstAttribute="top" secondItem="nTE-dL-NLx" secondAttribute="bottom" constant="277" id="Fa7-E4-Axx"/>
+                            <constraint firstAttribute="trailing" secondItem="3dr-CG-6kV" secondAttribute="trailing" constant="102" id="KBb-rf-9b5"/>
+                            <constraint firstItem="Sc8-Y1-yaw" firstAttribute="top" secondItem="9q8-YD-1Cg" secondAttribute="bottom" constant="73" id="UaS-Du-Tkq"/>
+                            <constraint firstItem="Irh-Yr-DOc" firstAttribute="top" secondItem="Sc8-Y1-yaw" secondAttribute="bottom" constant="61" id="Xiq-jb-XBk"/>
+                            <constraint firstItem="3dr-CG-6kV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="101" id="fgi-E8-EL7"/>
+                            <constraint firstItem="Sc8-Y1-yaw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="31" id="i2C-HI-CcV"/>
+                            <constraint firstItem="Irh-Yr-DOc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="ia3-Df-5jB"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="97.601199400299862"/>
+        </scene>
+    </scenes>
+</document>
